@@ -4,7 +4,6 @@
     <title>Assignment 2 - Movie Profiles</title>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <style>
-        /* Compact Styles: All the "look" goes here */
         body { background-color: #401B1B; color: white; font-family: sans-serif; text-align: center; padding: 40px 0; margin: 0; }
         h1, h2 { font-family: 'Racing Sans One', sans-serif; color: #A62D37; margin: 15px 0; }
         p { color: #BFAC73; font-size: 20px; line-height: 1.6; max-width: 800px; margin: 10px auto; }
@@ -15,10 +14,13 @@
             border-radius: 20px; box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
         }
 
-        /* Large Image Styles for the Website */
+        /* Image Styles */
         .logo-img { width: 300px; margin-bottom: 20px; }
-        .poster-img { width: 350px; margin: 15px; border-radius: 10px; border: 2px solid #BFAC73; }
         .char-img { height: 300px; border-radius: 12px; margin: 20px 0; }
+        
+        /* Poster Flexbox Styles */
+        .poster-container { display: flex; justify-content: center; align-items: flex-start; gap: 20px; flex-wrap: nowrap; margin-top: 20px; }
+        .poster-img { width: 300px; height: auto; border-radius: 10px; border: 2px solid #BFAC73; }
 
         ul { list-style-position: inside; text-align: left; display: inline-block; color: #BFAC73; font-size: 18px; }
         a { color: white; font-weight: bold; }
@@ -29,9 +31,15 @@
     <div class="movie-box">
         <img src="Cars3.webp" class="logo-img">
         <h1>The Movies</h1>
-        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-            <img src="cars1.webp" class="poster-img">
-            <img src="cars2.webp" class="poster-img">
+        <div class="poster-container">
+            <div>
+                <img src="cars1.webp" class="poster-img">
+                <p style="font-size: 16px;">Cars (2006)</p>
+            </div>
+            <div>
+                <img src="cars2.webp" class="poster-img">
+                <p style="font-size: 16px;">Cars 2 (2011)</p>
+            </div>
         </div>
     </div>
 
