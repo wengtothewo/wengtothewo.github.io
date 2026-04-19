@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Assignment 3 - Band Albums</title>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <style>
-        /* General Page Styles from Assignment 2 */
+        /* Required: Same background color as previous pages */
         body { 
             background-color: #401B1B; 
             color: white; 
             font-family: sans-serif; 
             text-align: center; 
-            padding: 40px 0; 
+            padding: 0; 
             margin: 0; 
         }
         
-        h1, h2 { font-family: 'Racing Sans One', sans-serif; color: #A62D37; margin: 15px 0; }
+        h1 { font-family: 'Racing Sans One', sans-serif; color: #A62D37; margin: 20px 0; }
 
-        /* Step: Navbar styling (Required Width 90%) */
+        /* Step: Navbar styling (Width 90%, ID navbar) */
         #navbar {
             width: 90%;
-            margin: 0 auto 20px auto;
+            margin: 20px auto;
             background-color: #2D1414;
             padding: 15px;
             border: 2px solid #BFAC73;
@@ -28,16 +29,22 @@
 
         #navbar a {
             color: white;
-            font-weight: bold;
-            text-decoration: underline;
+            font-family: 'Racing Sans One', sans-serif;
             margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        /* Step: Main Content Div (Required Width 60% + Padding + Border/Shadow) */
+        #navbar a:hover {
+            color: #BFAC73;
+            text-decoration: underline;
+        }
+
+        /* Step: Main Content Div (Width 60%, ID maincontent, Padding, Border, Shadow) */
         #maincontent {
             width: 60%;
-            margin: 0 auto;
-            background-color: #2D1414; /* Complementary dark color */
+            margin: 0 auto 40px auto;
+            background-color: #2D1414; 
             padding: 20px;
             border: 3px solid #BFAC73;
             border-radius: 20px;
@@ -46,23 +53,34 @@
 
         /* Final 20% - Table Styles */
         table {
-            width: 80%; /* Between 70-90% */
+            width: 85%; /* Between 70-90% */
             margin: 20px auto;
-            border-collapse: collapse; /* Single line borders */
-            border: 3px solid #BFAC73; /* Dark/Thick border */
+            border-collapse: collapse; /* Required: single line instead of double */
+        }
+
+        /* Border - dark color, 3 thick */
+        table, td {
+            border: 3px solid #111; 
         }
 
         td {
-            border: 3px solid #BFAC73;
             padding: 15px;
-            background-color: #3d1c1c; /* Cell background color */
-            vertical-align: middle; /* Vertical alignment centered */
+            background-color: #3d1c1c; /* Required: Cell color different from div */
+            vertical-align: middle; /* Required: Vertical Center */
             color: white;
         }
 
         .album-img {
-            width: 300px; /* Required 300px width */
+            width: 300px; /* Required: 300px wide */
             border-radius: 5px;
+        }
+
+        .album-title { 
+            font-family: 'Racing Sans One', sans-serif;
+            font-size: 1.3em; 
+            color: #BFAC73; 
+            display: block;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -76,34 +94,34 @@
     </div>
 
     <div id="maincontent">
-        <h1>Movie Soundtracks</h1>
+        <h1>Music Collection</h1>
         
         <table>
             <tr>
-                <td><img src="cars1.webp" class="album-img" alt="Cars 1"></td>
+                <td><img src="longliveasap.jpeg" class="album-img" alt="Long Live Asap"></td>
                 <td>
-                    <h3>Cars Soundtrack</h3>
-                    <p>Released: 2006</p>
+                    <span class="album-title">LONG.LIVE.A$AP</span>
+                    Released: 2013
                 </td>
-                <td>Fun Fact: "Life is a Highway" was originally by Tom Cochrane before Rascal Flatts covered it for the movie.</td>
+                <td><strong>Fun Fact:</strong> This is the debut studio album by A$AP Rocky and it features 17 songs on the deluxe version.</td>
             </tr>
             
             <tr>
-                <td><img src="cars2.webp" class="album-img" alt="Cars 2"></td>
+                <td><img src="liveforever.jpeg" class="album-img" alt="Live Forever"></td>
                 <td>
-                    <h3>Cars 2 Soundtrack</h3>
-                    <p>Released: 2011</p>
+                    <span class="album-title">Live Forever</span>
+                    Released: 2015
                 </td>
-                <td>Fun Fact: The soundtrack features Weezer covering the song "You Might Think."</td>
+                <td><strong>Fun Fact:</strong> This mixtape is only 20 minutes and 21 seconds long, containing exactly 10 tracks.</td>
             </tr>
 
             <tr>
-                <td><img src="cars3.webp" class="album-img" alt="Cars 3"></td>
+                <td><img src="midnight.jpg" class="album-img" alt="Midnight"></td>
                 <td>
-                    <h3>Cars 3 Soundtrack</h3>
-                    <p>Released: 2017</p>
+                    <span class="album-title">midnight - EP</span>
+                    Released: 2024
                 </td>
-                <td>Fun Fact: The score was composed by Randy Newman, who also did the music for the first film.</td>
+                <td><strong>Fun Fact:</strong> This EP by kobzx2z and Red Luna includes various versions of the song including sped-up and slowed.</td>
             </tr>
         </table>
     </div>
