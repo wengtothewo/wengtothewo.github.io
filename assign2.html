@@ -9,25 +9,33 @@
         p { color: #BFAC73; font-size: 20px; line-height: 1.6; max-width: 800px; margin: 10px auto; }
         
         .movie-box {
-            width: 85%; margin: 0 auto 40px auto; padding: 40px;
+            width: 90%; margin: 0 auto 40px auto; padding: 40px;
             background-color: #2D1414; border: 3px solid #BFAC73;
             border-radius: 20px; box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
         }
 
         /* Image Sizes */
-        .logo-img { width: 300px; margin-bottom: 20px; }
+        .logo-img { width: 250px; margin-bottom: 20px; }
         .char-img { height: 300px; border-radius: 12px; margin: 20px 0; }
         
-        /* Side-by-Side Posters */
+        /* 3-Poster Side-by-Side Row */
         .poster-container { 
             display: flex; 
-            flex-direction: row;      /* Forces them into a row */
-            justify-content: center; 
-            align-items: flex-start; 
-            gap: 30px;                /* Space between posters */
-            margin-top: 20px; 
+            flex-direction: row;      /* Forces items into a horizontal row */
+            justify-content: center;  /* Centers the posters */
+            align-items: flex-end;    /* Aligns them at the bottom */
+            gap: 15px;                /* Space between each poster */
+            margin-top: 20px;
+            flex-wrap: nowrap;        /* Prevents posters from jumping to a new line */
         }
-        .poster-img { width: 280px; height: auto; border-radius: 10px; border: 2px solid #BFAC73; }
+
+        /* Adjusted width so 3 posters fit side-by-side */
+        .poster-img { 
+            width: 250px; 
+            height: auto; 
+            border-radius: 10px; 
+            border: 2px solid #BFAC73; 
+        }
 
         ul { list-style-position: inside; text-align: left; display: inline-block; color: #BFAC73; font-size: 18px; }
         a { color: white; font-weight: bold; text-decoration: underline; }
@@ -38,14 +46,19 @@
     <div class="movie-box">
         <img src="Cars3.webp" class="logo-img">
         <h1>The Movies</h1>
+        
         <div class="poster-container">
             <div>
                 <img src="cars1.webp" class="poster-img">
-                <p style="font-size: 16px;">Cars (2006)</p>
+                <p style="font-size: 14px;">Cars (2006)</p>
             </div>
             <div>
                 <img src="cars2.webp" class="poster-img">
-                <p style="font-size: 16px;">Cars 2 (2011)</p>
+                <p style="font-size: 14px;">Cars 2 (2011)</p>
+            </div>
+            <div>
+                <img src="Cars3.webp" class="poster-img">
+                <p style="font-size: 14px;">Cars 3 (2017)</p>
             </div>
         </div>
     </div>
