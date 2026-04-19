@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 3 - Band Albums</title>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <style>
+        /* General Page Styles from Assignment 2 */
+        body { 
+            background-color: #401B1B; 
+            color: white; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 40px 0; 
+            margin: 0; 
+        }
+        
+        h1, h2 { font-family: 'Racing Sans One', sans-serif; color: #A62D37; margin: 15px 0; }
+
+        /* Step: Navbar styling (Required Width 90%) */
+        #navbar {
+            width: 90%;
+            margin: 0 auto 20px auto;
+            background-color: #2D1414;
+            padding: 15px;
+            border: 2px solid #BFAC73;
+            border-radius: 10px;
+        }
+
+        #navbar a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 0 15px;
+        }
+
+        /* Step: Main Content Div (Required Width 60% + Padding + Border/Shadow) */
+        #maincontent {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #2D1414; /* Complementary dark color */
+            padding: 20px;
+            border: 3px solid #BFAC73;
+            border-radius: 20px;
+            box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
+        }
+
+        /* Final 20% - Table Styles */
+        table {
+            width: 80%; /* Between 70-90% */
+            margin: 20px auto;
+            border-collapse: collapse; /* Single line borders */
+            border: 3px solid #BFAC73; /* Dark/Thick border */
+        }
+
+        td {
+            border: 3px solid #BFAC73;
+            padding: 15px;
+            background-color: #3d1c1c; /* Cell background color */
+            vertical-align: middle; /* Vertical alignment centered */
+            color: white;
+        }
+
+        .album-img {
+            width: 300px; /* Required 300px width */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="assign1.html">Characters</a>
+        <a href="assign2.html">Movie Facts</a>
+        <a href="albums.html">Albums</a>
+    </div>
+
+    <div id="maincontent">
+        <h1>Movie Soundtracks</h1>
+        
+        <table>
+            <tr>
+                <td><img src="cars1.webp" class="album-img" alt="Cars 1"></td>
+                <td>
+                    <h3>Cars Soundtrack</h3>
+                    <p>Released: 2006</p>
+                </td>
+                <td>Fun Fact: "Life is a Highway" was originally by Tom Cochrane before Rascal Flatts covered it for the movie.</td>
+            </tr>
+            
+            <tr>
+                <td><img src="cars2.webp" class="album-img" alt="Cars 2"></td>
+                <td>
+                    <h3>Cars 2 Soundtrack</h3>
+                    <p>Released: 2011</p>
+                </td>
+                <td>Fun Fact: The soundtrack features Weezer covering the song "You Might Think."</td>
+            </tr>
+
+            <tr>
+                <td><img src="cars3.webp" class="album-img" alt="Cars 3"></td>
+                <td>
+                    <h3>Cars 3 Soundtrack</h3>
+                    <p>Released: 2017</p>
+                </td>
+                <td>Fun Fact: The score was composed by Randy Newman, who also did the music for the first film.</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
