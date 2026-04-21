@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRAGMATA | Characters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #232832 0%, #252B4E 100%);
+            color: #CDD1D4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 60px;
+            color: white;
+            margin: 40px 0;
+            text-shadow: 0 0 15px #0B2675;
+        }
+
+        .navbar {
+            background-color: #252B4E;
+            padding: 20px;
+            border-bottom: 2px solid #0B2675;
+        }
+
+        .navbar a {
+            color: #CDD1D4;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Layout for the Character Sections */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .char-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 60px;
+            background: rgba(11, 38, 117, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #0B2675;
+        }
+
+        .char-info {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        .char-gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .char-img {
+            width: 100%;
+            border: 2px solid #CDD1D4;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .char-img:hover {
+            transform: scale(1.05);
+            border-color: white;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            border-left: 5px solid #0B2675;
+            padding-left: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="WrapUpHome.html">Home</a>
+        <a href="WrapUp2.html">Characters</a>
+        <a href="WrapUp3.html">The World</a>
+        <a href="WrapUp4.html">References</a>
+    </div>
+
+    <div class="container">
+        <h1>The Duo</h1>
+
+        <div class="char-section">
+            <div class="char-info">
+                <h2>Hugh (The Astronaut)</h2>
+                <p>
+                    Hugh is the primary protagonist of Pragmata. He wears a highly advanced, 
+                    heavy-duty EVA suit designed for the harsh lunar environment. What makes 
+                    Hugh interesting is the level of detail on his gear—you can see every mechanical 
+                    joint and sensor. In the gameplay, he acts as the protector, using his 
+                    physical strength and high-tech weaponry to fend off robotic threats. His suit 
+                    is a masterpiece of sci-fi design, blending realism with futuristic technology.
+                </p>
+            </div>
+            <div class="char-gallery">
+                <img src="pragmata/hugh1.jpg" alt="Hugh 1" class="char-img">
+                <img src="pragmata/hugh2.webp" alt="Hugh 2" class="char-img">
+                <img src="pragmata/hugh3.jpg" alt="Hugh 3" class="char-img">
+            </div>
+        </div>
+
+        <div class="char-section">
+            <div class="char-gallery">
+                <img src="pragmata/diana1.webp" alt="Diana 1" class="char-img">
+                <img src="pragmata/diana2.jpg" alt="Diana 2" class="char-img">
+                <img src="pragmata/diana3.webp" alt="Diana 3" class="char-img">
+            </div>
+            <div class="char-info">
+                <h2>Diana (The Sidekick)</h2>
+                <p>
+                    Diana is the mysterious young girl who accompanies Hugh. She is much more 
+                    than a simple sidekick; she possesses incredible hacking powers that allow 
+                    her to manipulate the digital world around them. As I mentioned before, her 
+                    ability to weaken robotic enemies is a game-changer for the combat. Her design, 
+                    with her long hair and blue jacket, provides a sharp contrast to Hugh’s 
+                    metallic suit, making their partnership visually striking and unique.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
