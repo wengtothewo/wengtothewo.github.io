@@ -2,137 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRAGMATA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <style>
         
-
         body {
             
-            background: #232832;
             background: linear-gradient(180deg, #232832 0%, #252B4E 100%);
-            color: #CDD1D4;
-            font-family: 'Rajdhani', sans-serif;
+            color: #CDD1D4; 
             margin: 0;
             padding: 0;
+            text-align: center;
             min-height: 100vh;
         }
 
-        h1, h2 {
+        
+        h1 {
             font-family: 'Orbitron', sans-serif;
+            font-size: 100px;
+            color: white;
+            margin-top: 50px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            
+            text-shadow: 0 0 20px #0B2675;
         }
 
         
         .navbar {
             background-color: #252B4E;
-            border-bottom: 3px solid #0B2675;
-            display: flex;
-            justify-content: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            padding: 20px;
+            border-bottom: 2px solid #0B2675;
         }
 
         .navbar a {
             color: #CDD1D4;
-            padding: 20px 30px;
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .navbar a:hover {
-            background-color: #0B2675;
-            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
         }
 
         
-        #main-wrapper {
-            max-width: 1100px;
+        .poster-container {
+            margin: 40px auto;
+            width: 80%;
+        }
+
+        .poster-image {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border: 5px solid #CDD1D4; 
+        }
+
+        
+        .content {
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        #hero-header {
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        #hero-header h1 {
-            font-size: 80px; 
-            margin: 0;
-            color: white;
-            text-shadow: 0 0 20px rgba(11, 38, 117, 0.9);
-        }
-
-        
-        .poster-box {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .main-img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            
-            transition: transform 0.4s, box-shadow 0.4s;
-        }
-
-        .main-img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 30px rgba(11, 38, 117, 0.6);
-        }
-
-        
-        .content-flex {
-            display: flex;
-            gap: 40px;
-            background-color: rgba(37, 43, 78, 0.4);
-            padding: 40px;
-            border: 1px solid #0B2675;
-            border-radius: 15px;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-
-        .text-area {
-            flex: 2;
-        }
-
-        .sidebar-img-area {
-            flex: 1;
-            text-align: center;
-        }
-
-        .secondary-img {
-            width: 100%;
-            border: 2px solid #CDD1D4;
-        }
-
-        
-        .video-container {
-            text-align: center;
-            margin-top: 50px;
-            padding-bottom: 50px;
-        }
-
-        iframe {
-            border: 2px solid #0B2675;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 14px;
-            border-top: 1px solid #252B4E;
-            color: #45A29E;
+            font-family: sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -140,58 +70,25 @@
 
     <div class="navbar">
         <a href="WrapUpHome.html">Home</a>
-        <a href="WrapUp2.html">Characters</a>
-        <a href="WrapUp3.html">The World</a>
+        <a href="WrapUp2.html">Page 2</a>
+        <a href="WrapUp3.html">Page 3</a>
         <a href="WrapUp4.html">References</a>
     </div>
 
-    <div id="main-wrapper">
-        
-        <div id="hero-header">
-            <h1>PRAGMATA</h1>
-        </div>
+    <h1>PRAGMATA</h1>
 
-        <div class="poster-box">
-            <img src="pragmata_main.jpg" alt="Pragmata Main Art" class="main-img">
-        </div>
-
-        <div class="content-flex">
-            <div class="text-area">
-                <h2>A New Vision of the Future</h2>
-                <p>
-                    Pragmata is an upcoming sci-fi action-adventure game developed by Capcom. 
-                    It was first revealed in 2020 and immediately caught my eye because of its 
-                    unique aesthetic. The game features a lunar setting, a high-tech astronaut, 
-                    and a mysterious young girl who seems to possess incredible powers. 
-                    I chose this theme because the "Moon Dystopia" vibe is very visually 
-                    interesting and allows for a great use of dark blues and metallic grays 
-                    in web design.
-                </p>
-                <p>
-                    The mystery of Pragmata lies in its environment. In the trailers, we see 
-                    the Earth from the Moon's surface, but everything feels distorted and 
-                    digital. It makes you wonder if the characters are in a simulation or a 
-                    dying colony. My goal for this project is to showcase the art style of 
-                    this game while practicing my HTML and CSS skills. This homepage acts as 
-                    the gateway to the deeper secrets found on the other pages.
-                </p>
-            </div>
-
-            <div class="sidebar-img-area">
-                <h3>Design Roots</h3>
-                <img src="color_palette.jpg" alt="Project Color Palette" class="secondary-img">
-                <p><small>Our site's color profile is based on the game's official lighting.</small></p>
-            </div>
-        </div>
-
-        <div class="video-container">
-            <h2>Experience the Trailer</h2>
-            <iframe width="700" height="394" src="https://www.youtube.com/embed/xOxS_N9InmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-
+    <div class="poster-container">
+        <img src="pragmata_main.jpg" alt="Pragmata Poster" class="poster-image">
     </div>
 
-    
+    <div class="content">
+        <p>
+            Write your 100 words of original content here. Tell the story of why you 
+            chose Pragmata and what makes the visual style of this game so unique 
+            compared to other sci-fi titles. Mention the contrast between the 
+            little girl and the heavy mechanical suit of the astronaut. 
+        </p>
+    </div>
 
 </body>
 </html>
