@@ -37,7 +37,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -55,27 +55,48 @@
             font-family: 'Orbitron', sans-serif;
             color: white;
             margin-top: 0;
-            border-bottom: 2px solid #0B2675;
+            /* Blue line removed here */
             padding-bottom: 10px;
         }
 
-        /* Fast Facts Table Styling */
+        .specs-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .spec-box {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
         }
 
         td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(205, 209, 212, 0.2);
+            padding: 10px 5px;
+            border-bottom: 1px solid rgba(205, 209, 212, 0.1);
         }
 
         .label {
             font-weight: bold;
-            color: white;
-            width: 30%;
+            color: #4A90E2;
+            width: 35%;
         }
 
         .source-box {
@@ -88,11 +109,6 @@
         .source-box a {
             color: #4A90E2;
             text-decoration: none;
-        }
-
-        .source-box a:hover {
-            color: white;
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -142,21 +158,14 @@
         <div class="info-section">
             <h2>About the Development</h2>
             <p>
-                Pragmata was first revealed in 2020. It is a brand new IP (Intellectual Property) from Capcom, 
-                designed to make use of the next generation hardware. The game is built 
-                using the RE (Reach for The Moon) Engine, which is the same technology used for the recent Resident Evil and 
-                Monster Hunter games. 
-            </p>
-            <p>
-                The development team has focused heavily on creating a "profound sci fi setting" with 
-                realistic physics and lighting (using ray tracing). While the game was originally planned to release in 2022, 
-                the team decided to delay it to make sure that the final product meets the high expectations of fans.
+                Pragmata is being built on the <strong>RE Engine</strong>, Capcom's proprietary software known for its incredible performance and photorealistic graphics. 
+                The development team is prioritizing next-gen ray tracing and high-fidelity textures to bring the lunar environment to life.
             </p>
             
             <div class="source-box">
                 <strong>Project Sources:</strong><br>
-                Official Site: <a href="https://www.capcom-games.com/pragmata/en-us/" target="_blank">Capcom Pragmata Official</a><br>
-                Trailer Info: <a href="https://youtu.be/oncaa_fMsyw" target="_blank">Capcom YouTube Channel</a>
+                Official Site: <a href="https://www.capcom.co.jp/pragmata/" target="_blank">Capcom Pragmata Official</a><br>
+                Hardware Reference: <a href="https://store.steampowered.com" target="_blank">Steam Store General Specs</a>
             </div>
         </div>
     </div>
